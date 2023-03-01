@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+/* section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+} */
+
+.footer-distributed {
+  background-color: #ffffff;
+  /* box-shadow: 0 1px 1px 0 rgba(253, 253, 253, 0.12); */
+  box-sizing: border-box;
+  width: 106%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  margin-left: -3%;
+  margin-right: -55%;
+ 
+}
+
+/* .footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+} */
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* .footer-distributed .footer-links .link-1:before {
+  content: none;
+} */
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+/* 
+.flh:hover{
+  background-color: aqua;
+  
+  border-radius: 3%;
+  border: #ff0000;
+
+} */
+
+
+
+
+
+
+
+
+
+.flh {
+	margin: -0% auto 0;
+	padding-top: 0%;
+	
+	/* width: 590px; */
+    width: 100%;
+	height: 30px;
+	background-color: #ff0000;
+	border-radius: 83px;
+	font-size: 0;
+}
+.flh {
+	line-height: 30px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+  @keyframes rotate {
+	0%{
+	  filter: hue-rotate(0deg);
+	}
+	100%{
+	  filter: hue-rotate(360deg);
+	}
+  }
+
+  .flh:after{
+	position: absolute;
+	content: "";
+	background: #fff;
+	 background: linear-gradient(#ea1f1f, #ea00ff, #07ff49);
+								/*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+	width: 104%;
+	height: 30px;
+	left: -2%;
+	top: -5%; 
+								/* if the font is 'Oswald'*/
+	border-radius: 50px;
+	transform: scaleY(0);
+	z-index: -1;
+	animation: rotate 1.5s linear infinite;
+	transition: transform 0.3s ease;
+  }
+  .flh:hover:after{
+	transform: scaleY(1);
+  }
+  .flh:hover{
+	color: #fff;
+  }
+    body{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+img.gg1{
+  width: 40%;
+  height: 400px;
+}
+img.f1{
+  width: 100%;
+  height: 550px;
+}
+h1{
+  text-align: center;
+  color: white;
+  background: purple;
+  border: 3px solid yellow;
+
+}
+p{
+  color: white;
+  background-color:brown;
+}
+div.a1{
+  border: 2px solid yellow;
+  background-color: lightskyblue;
+  border-radius: 10px;
+  color: black;
+  width: 100%;
+}
+.nava {
+margin: -22px auto 0;
+padding-top: 0%;
+
+/* width: 590px; */
+  width: 100%;
+height: 65px;
+background-color: #34495e;
+border-radius: 8px;
+font-size: 0;
+}
+.nava a {
+line-height: 50px;
+height: 100%;
+font-size: 15px;
+display: inline-block;
+position: relative;
+z-index: 1;
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+color: white;
+cursor: pointer;
+}
+.a1 {
+width: 100px;
+}
+.a2 {
+width: 100px;
+}
+.a3 {
+width: 100px;
+
+}
+.a4 {
+width: 160px;
+}
+.a5 {
+width: 120px;
+}
+/* 2nd */
+@keyframes rotate {
+0%{
+  filter: hue-rotate(0deg);
+}
+100%{
+  filter: hue-rotate(360deg);
+}
+}
+
+.wrapper2 ul li a:after{
+position: absolute;
+content: "";
+background: #fff;
+ background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+              /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+width: 104%;
+height: 110%;
+left: -2%;
+top: -5%; 
+              /* if the font is 'Oswald'*/
+border-radius: 50px;
+transform: scaleY(0);
+z-index: -1;
+animation: rotate 1.5s linear infinite;
+transition: transform 0.3s ease;
+}
+.wrapper2 ul li a:hover:after{
+transform: scaleY(1);
+}
+.wrapper2 ul li a:hover{
+color: #fff;
+}
+
+
+.logo{
+padding-top: 8px;
+padding-left: 50px;
+
+
+}
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+font-family: Roboto;
+}
+
+/* section {
+width: 100%;
+display: inline-block;
+background: #ccc;
+height: 60vh;
+text-align: center;
+font-size: 22px;
+font-weight: 700;
+text-decoration: underline;
+} */
+
+.footer-distributed {
+background-color: #ffffff;
+/* box-shadow: 0 1px 1px 0 rgba(253, 253, 253, 0.12); */
+box-sizing: border-box;
+width: 106%;
+text-align: left;
+font: normal 16px sans-serif;
+padding: 45px 50px;
+margin-left: -3%;
+margin-right: -55%;
+
+}
+
+/* .footer-distributed .footer-left p {
+color: #8f9296;
+font-size: 14px;
+margin: 0;
+} */
+/* Footer links */
+
+.footer-distributed p.footer-links {
+font-size: 18px;
+font-weight: bold;
+color: #ff0000;
+margin: 0 0 10px;
+padding: 0;
+transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+display: inline-block;
+line-height: 1.8;
+text-decoration: none;
+color: inherit;
+transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+content: "·";
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+
+/* .footer-distributed .footer-links .link-1:before {
+content: none;
+} */
+
+.footer-distributed .footer-right {
+float: right;
+margin-top: 6px;
+max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+display: inline-block;
+width: 35px;
+height: 35px;
+background-color:white;
+border-radius: 2px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+margin-left: 3px;
+transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+.footer-distributed .footer-left, .footer-distributed .footer-right {
+  text-align: center;
+}
+.footer-distributed .footer-right {
+  float: none;
+  margin: 0 auto 20px;
+}
+.footer-distributed .footer-left p.footer-links {
+  line-height: 1.8;
+}
+}
+/* 
+.flh:hover{
+background-color: aqua;
+
+border-radius: 3%;
+border: #ff0000;
+
+} */
+
+
+
+
+
+
+
+
+
+.flh {
+margin: -0% auto 0;
+padding-top: 0%;
+
+/* width: 590px; */
+  width: 100%;
+height: 30px;
+background-color: #ff0000;
+border-radius: 83px;
+font-size: 0;
+}
+.flh {
+line-height: 30px;
+height: 100%;
+font-size: 15px;
+display: inline-block;
+position: relative;
+z-index: 1;
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+color: white;
+cursor: pointer;
+}
+
+@keyframes rotate {
+0%{
+  filter: hue-rotate(0deg);
+}
+100%{
+  filter: hue-rotate(360deg);
+}
+}
+
+.flh:after{
+position: absolute;
+content: "";
+background: #fff;
+ background: linear-gradient(#ea1f1f, #ea00ff, #07ff49);
+              /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+width: 104%;
+height: 30px;
+left: -2%;
+top: -5%; 
+              /* if the font is 'Oswald'*/
+border-radius: 50px;
+transform: scaleY(0);
+z-index: -1;
+animation: rotate 1.5s linear infinite;
+transition: transform 0.3s ease;
+}
+.flh:hover:after{
+transform: scaleY(1);
+}
+.flh:hover{
+color: #fff;
+  }
+  </style>
+  <link rel="stylesheet" href="startup.css">
+</head>
+<body class="main_div2">
+<body class="main_div2">
+  <script scr="home_page.js"></script>
+                                              <!-- Negivition Start -->
+  <nav class="nava">
+      <div></div>
+      
+      <div class="wrapper2">
+          
+          <table>  
+              <tr>
+                  <td> <a class="logo" href="#"><img height="40px" width="200px"  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJHMZf6FGSsNqYMHyIgOZS__bCerP5XZ8IQvn6g2r_5NsUL52CxS288tScf0rprJLZoZLv3c0tyDlBCh2nhi_aPc2-cxZm69m_DLqaueGSJWZLjQddDKQxTXIfZrTE9wiKHoisWIlIk0UjNpthtpGddaocdk75xOazhh-v1TiXGmtJS8V6pC5uSOOmBg/s320/20230301_110001.png" >
+                     </a>
+                  <td><ul> <li><a class="a1" href="home.Html">Home</a></li></ul></td>
+                  <td><ul> <li><a class="a2" href="developer.html">About</a></li></ul></td>
+                  <td><ul> <li><a class="a3" href="https://gpbgp.org/">Institute</a></li></ul></td>
+                  <td><ul> <li><a class="a4" href="contact.html">Contact</a></li></ul></td>
+                  <td><ul> <li><a class="a5" href="developer.html">Developer</a></li></ul></td>
+              </tr>
+          </table>
+     </div>
+     </nav>
+     
+    
+<h1> Robotics the India Future</h1>
+<div class="ss2">
+<img class="f1" src="https://www.analyticsinsight.net/wp-content/uploads/2021/12/The-Future-of-Robotics-Its-Implications-in-2021-and-Beyond.jpg">
+</div>
+<p></p>
+<h1>Robotics is helping India advance in all the ways possible</h1>
+<div class="ss2">
+    <p>Robotics will eventually play a key role in India's “Make in India” strategy, which aims to persuade global businesses to invest. India’s position as a true hub of robotics talent is due to this. At this time, the whole population and their daily life are centred on the internet. Everything from buying to schooling to vacation planning can be done with just a few clicks on smartphones and laptops. No one could have predicted digital life a decade ago, and the same can be said for robotics. Its true talent and power are poised to advance a wide range of field interests.  </p>
+</div>
+<p></p>
+<h1>The Bigger Picture</h1>
+<p></p>
+<div class="ss2">
+    <p>A robot can help you, interact with you, and even take your place if necessary. Robotics can produce a personalised machine that can do anything when combined with machine learning, deep learning, computing, and the correct software application. Years ago, processing power and artificial intelligence couldn’t keep up with the speed of robots or the potential of robotics. However, new technology, an upgrade in India’s academic franchise, and robot training in Pune will allow robots to be what they were intended to be in the past. Robots are present in every aspect of life, including your house, schools, colleges, malls, and manufacturing facilities. Robotic machines have taken over warehouse occupations that were formerly perilous and risky for workers. Warehouse automation is expected to increase at a CAGR of 10-12 percent in India, according to the government.  </p>
+</div>
+<p></p>
+<h1>The Employment Scope in Robotics</h1>
+<p></p>
+<div class="ss2">
+    <p>Unemployment is a major concern for Indians, and robotics technology has the potential to reduce the number of jobs available. On the plus side, robotics will open up more golden chances for entrepreneurs in India, which already has a thriving start-up culture. Robotics will not only revolutionise our lives, but it will also broaden the scope of progress, luxury, and necessity. It has quickly absorbed the top industries, including manufacturing, pharmaceuticals, packaging, FMCG, and inspection. Education, defence, and transportation are three of the most promising fields. Experts feel that robotics will inevitably become an integral component of our civilization.</p>
+</div>
+<p></p>
+<h1>Will Robots Replace Indians at Work?</h1>
+<p></p>
+<div class="ss2">
+    <p>The answer lies in our plans for robot use. Instead of focusing on robots that are likely to completely replace us at work, Indian officials should consider encouraging the usage of robots that help us make our professions more effective. The United Nations Conference on Trade and Development has also underlined the serious potential of robots replacing people. According to a 2016 report, although robots endanger up to two-thirds of jobs in underdeveloped countries, they will also create new job prospects. Let’s not forget about the externalities at play. In the not-too-distant future, robots will be able to lower manufacturing employment costs to the point where plants will be re-shored from their current low-labour-cost offshore sites. In some application domains, nevertheless, we would want robots to completely replace us as quickly as possible. Manual scavenging is among them. A Sepoy Sewage Tank Robot was built by a team from IIT Madras, which employs high-velocity blades to cut through septic system sludge and an air compressor to suction it out. This Indian robot costs a quarter of what a comparable imported robot would. Bandicoot, a scavenging robot, was operated to clean the drains in Thiruvananthapuram a few years ago. In various sectors of the economy, we must examine the benefits and risks of robotics. India has been effective in identifying key sectors such as healthcare, agriculture, schooling, smart cities and facilities, and smart transportation where AI technology, including robotics, may benefit the country. Artificial intelligence has a huge economic potential, according to NITI Aayog, which estimates that by 2035, AI would add US$1 trillion to the Indian economy. While Indian politicians have been busy, so does the Indian robotics start-up sector.  </p>
+</div>
+<p></p>
+<h1>Challenges to Commercial Success</h1>
+<p></p>
+<div class="ss2">
+    <p>Indian robotics firms confront the same challenges that have historically plagued entrepreneurs in a variety of industries, both tech and non-tech. The vast quantity of paperwork involved in importing hardware devices into India is a major barrier. Indian robotics development is further hampered by a scarcity of competent manpower in critical design and engineering fields. Other limitations include a small domestic industry for robotics in India and a limited investment base. The Robotics Society of India, for example, is working hard to overcome these issues and increase the profile of Indian robotics enterprises among the country’s government, corporate, and financial leaders. The success of these efforts will be critical in deciding the Indian robotics sector’s long-term success.  </p>
+</div>
+<p></p>
+<h1>Final Thoughts</h1>
+<p></p>
+<div class="ss2">
+    <p>India is a production and manufacturing powerhouse. Under the “Make in India” strategy, companies with innovative and automated technologies will assist meet global requirements and set a new international benchmark. As a result, robotics technology use is expected to skyrocket in the future years.</p><br>
+    <p><b>Disclaimer:</b>The information provided in this article is solely the author/advertisers’ opinion and not an investment advice – it is provided for educational purposes only. By using this, you agree that the information does not constitute any investment or financial instructions by Analytics Insight and the team. Anyone wishing to invest should seek his or her own independent financial or professional advice. Do conduct your own research along with financial advisors before making any investment decisions. Analytics Insight and the team is not accountable for the investment views provided in the article.</p>
+
+</div>
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img class="gg1" src="https://pbs.twimg.com/profile_banners/11348282/1672941961/1080x360" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>INDIAN ROBOT SCIENTIST</h2>
+          <p class="title">Diwakar Vaish</p>
+          <p>Diwakar Vaish (/dɪˈvækər ˈvæʃ/ div-AK-ər VASH; born 23 July 1992) is an Indian born robotics researcher and Head of Robotics and Research at A-SET Training and Research Institutes (2010–present).</p>
+          <p><a href="https://en.wikipedia.org/wiki/Robot_Scientist">READ MORE</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img class="gg1" src="https://pbs.twimg.com/media/FqAaxk1XoAAJDyY?format=jpg&name=small" alt="" style="width: 100%;">
+            <h2>INDIAN ROBOT SCIENTIST</h2>
+            <p class="title">Dabbala Rajagopal "Raj" Reddy </p>
+            <p>Dabbala Rajagopal ("Raj") Reddy. For pioneering the design and construction of large scale artificial intelligence systems, demonstrating the practical importance and potential commercial impact of artificial intelligence technology. Raj Reddy pioneered the construction of systems for recognizing continuous speech.</p>
+            <p><a href="https://www.google.com/search?rlz=1C1YTUH_enIN1034IN1034&hl=en&sxsrf=AJOqlzUItozclXLQpzIo_kKNdoI3WTyp5g:1677641917260&q=Dabbala+Rajagopal+%22Raj%22+Reddy+robotics+scientist&spell=1&sa=X&ved=2ahUKEwidmqeU57n9AhXRmOYKHQMbBLQQBSgAegQICRAB&biw=1540&bih=723&dpr=1.25">READ MORE</a></p>
+          </div>
+        </div>
+      </div>
+      <section></section>
+
+		<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="home.Html"><b class="flh"> Home</b></a>
+
+					<a class="link-2" href="developer.html"><b class="flh">About</b></a>
+
+					<a class="link-2" href="https://gpbgp.org/"><b class="flh">Institute</b></a>
+
+					<a class="link-2" href="contact.html"><b class="flh">Contact</b></a>
+
+					<a class="link-2" href="developer.html"><b class="flh"> Developer </b></a>
+
+					<a class="link-2" href="#"><b class="flh"></b></a>
+				</p>
+
+				<p>Virtual World &copy; 2023</p>
+			</div>
+
+		</footer>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+p.title{
+  color: white;
+  text-shadow: 0.5px 0.5px yellow;
+}
+img.ddd3{
+  margin-left: 25%;
+}
+
+img.dd2{
+  margin-left: 35%;
+}
+ul.dd3{
+  color: white;
+  text-align: center;
+}
+a.hovers:hover{
+  background-color: yellow;
+}
+
+body{
+  background-color: black;
+  background-repeat: no-repeat;
+}
+h1{
+ text-align: center;
+ text-transform: uppercase;
+ color: white;
+ border: 5px solid yellow;
+ display: inline;
+ border-radius: 20px;
+ background-color: purple;
+ margin: 10px;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+/* section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+} */
+
+.footer-distributed {
+  background-color: #ffffff;
+  /* box-shadow: 0 1px 1px 0 rgba(253, 253, 253, 0.12); */
+  box-sizing: border-box;
+  width: 106%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  margin-left: -3%;
+  margin-right: -55%;
+ 
+}
+
+/* .footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+} */
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* .footer-distributed .footer-links .link-1:before {
+  content: none;
+} */
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+/* 
+.flh:hover{
+  background-color: aqua;
+  
+  border-radius: 3%;
+  border: #ff0000;
+
+} */
+
+
+
+
+
+
+
+
+
+.flh {
+	margin: -0% auto 0;
+	padding-top: 0%;
+	
+	/* width: 590px; */
+    width: 100%;
+	height: 30px;
+	background-color: #ff0000;
+	border-radius: 83px;
+	font-size: 0;
+}
+.flh {
+	line-height: 30px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+  @keyframes rotate {
+	0%{
+	  filter: hue-rotate(0deg);
+	}
+	100%{
+	  filter: hue-rotate(360deg);
+	}
+  }
+
+  .flh:after{
+	position: absolute;
+	content: "";
+	background: #fff;
+	 background: linear-gradient(#ea1f1f, #ea00ff, #07ff49);
+								/background: linear-gradient(375deg, #1cc7d0, #2ede98);/
+	width: 104%;
+	height: 30px;
+	left: -2%;
+	top: -5%; 
+								/* if the font is 'Oswald'*/
+	border-radius: 50px;
+	transform: scaleY(0);
+	z-index: -1;
+	animation: rotate 1.5s linear infinite;
+	transition: transform 0.3s ease;
+  }
+  .flh:hover:after{
+	transform: scaleY(1);
+  }
+  .flh:hover{
+	color: #fff;
+  }
+
+
+}
+
+.nav{
+  background-color:skyblue;
+  margin: 10px;
+  padding: 20px;
+  height: 80px;
+}
+a{
+  border: 2px splpid rebeccapurple;
+  text-decoration: none;
+  border-radius:40px;
+  display: inline;
+}
+.J{
+  background-color: black;
+}
+.c1{
+  height: 100px;
+}
+img.aa1{
+  width: 100%; height: 500px;
+}
+
+
+div.row{
+  border: 2px solid yellow;
+  background-color: brown;
+  border-radius: 10px;
+  color: white;
+}
+div.column{
+  border: 2px solid yellow;
+  background-color: brown;
+  border-radius: 10px;
+  color: white;
+  
+}
+div.card{
+  border: 2px solid yellow;
+  background-color: rgb(172, 154, 60);
+  height: 5%;
+  border-radius: 10px;
+  color: white;
+  height: 700px;
+}
+a.hovers{ border: 2px splpid rebeccapurple;
+text-decoration: none;
+border-radius:40px;
+display: inline;
+background-color: gray;
+}
+div.ss3{
+border: 2px solid yellow;
+background-color: brown;
+border-radius: 10px;
+color: white;
+}
+
+
+.nava {
+margin: -16px auto 0;
+padding-top: 0%;
+
+/* width: 590px; */
+  width: 100%;
+height: 65px;
+background-color: #1500ff;
+border-radius: 8px;
+font-size: 0;
+position: fixed;
+}
+.nava a {
+line-height: 50px;
+height: 100%;
+font-size: 15px;
+display: inline-block;
+position: relative;
+z-index: 1;
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+color: white;
+cursor: pointer;
+}
+.a1 {
+width: 100px;
+}
+.a2 {
+width: 100px;
+}
+.a3 {
+width: 100px;
+
+}
+.a4 {
+width: 160px;
+}
+.a5 {
+width: 120px;
+}
+/* 2nd */
+@keyframes rotate {
+0%{
+  filter: hue-rotate(0deg);
+}
+100%{
+  filter: hue-rotate(360deg);
+}
+}
+
+.wrapper2 ul li a:after{
+position: absolute;
+content: "";
+background: #fff;
+ background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+              /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+width: 104%;
+height: 110%;
+left: -2%;
+top: -5%; 
+              /* if the font is 'Oswald'*/
+border-radius: 50px;
+transform: scaleY(0);
+z-index: -1;
+animation: rotate 1.5s linear infinite;
+transition: transform 0.3s ease;
+}
+.wrapper2 ul li a:hover:after{
+transform: scaleY(1);
+}
+.wrapper2 ul li a:hover{
+color: #fff;
+}
+
+
+.logo{
+padding-top: 8px;
+padding-left: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+        
+        </style>
+    
+</head>
+<body class="main_div2">
+  <script scr="home_page.js"></script>
+                                              <!-- Negivition Start -->
+  <nav class="nava">
+      <div></div>
+      
+      <div class="wrapper2">
+          
+          <table>  
+              <tr>
+                  <td> <a class="logo" href="#"><img height="40px" width="200px"  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJHMZf6FGSsNqYMHyIgOZS__bCerP5XZ8IQvn6g2r_5NsUL52CxS288tScf0rprJLZoZLv3c0tyDlBCh2nhi_aPc2-cxZm69m_DLqaueGSJWZLjQddDKQxTXIfZrTE9wiKHoisWIlIk0UjNpthtpGddaocdk75xOazhh-v1TiXGmtJS8V6pC5uSOOmBg/s320/20230301_110001.png" alt=""></a></td>
+                  <td><ul> <li><a class="a1" href="home.html">Home</a></li></ul></td>
+                  <td><ul> <li><a class="a2" href="developer.html">About</a></li></ul></td>
+                  <td><ul> <li><a class="a3" href="https://gpbgp.org/">Institute</a></li></ul></td>
+                  <td><ul> <li><a class="a4" href="contact.html">Contact</a></li></ul></td>
+                  <td><ul> <li><a class="a5" href="developer.html">Developer</a></li></ul></td>
+              </tr>
+          </table>
+      <div class="animation start-home"></div>
+      </nav>
+</div>
+  <img src="https://pbs.twimg.com/media/Fi70LkpWIAEojQq?format=jpg&name=900x900" alt="" height="550px" width="100%">
+  </div>
+</p>
+  <h1>HOST CITIES</h1>
+    <p>
+    <img CLASS="dd2" SRC="https://www.g20.org/content/dam/gtwenty/meeting-venues/India-Map.svg">
+    <ul class="dd3">
+        <li>Delhi</li>
+        <li>Pragati Maidan</li>
+        
+    </ul>
+    </p>
+    <h1>G20 Summit 2023 in India</h1>
+    <p>
+    <div class="ss3">
+        The G20 Summit 2023 will be held in India this year. It will be held in New Delhi at Pragati Maidan. This is like international financial Stability, environment changes, greenhouse gas emissions and for sustainable development. So, these are some aims and the issues that will be solved by the G20 summit. This year also to resolve issues the G20 will be going to hold. The official website link of the G20 2023 Summit is www.g20.org.The G20 is the Group of twenty is an intergovernmental organization made up of the European Union and 18 other nations. This nation group is called G20. The G20 Stives to address more important global Economic concerns. Ok the G20 Nation it covered almost 85% of the world economy which is a lay percentage in the economy, it covered almost 75 percent of the world trade, and almost 66 percent of the world population. This year also the G20 will be held. In this G20 Summit 2023 the twenty nation foreign minister will come and talk about the issue. Our foreign minister Jaishankar will be included in this G20 Summit 2023.
+
+        Join Telegram
+        </div>
+    </p>
+        <h1>G20 Summit 2023 Location</h1>
+        <p>
+            <div class="ss3">
+                The G20 Summit 2023 Location is in Pragati Maidan in New Delhi. This will be held in India. So, the preparation for this has started. This will be conducted with our Ministry of External Affairs. They revealed That there will be 249 meetings held throughout the nation. From which 190 will be attended by the minister in charge of the G20 Nations.
+
+                From which the nodal ministries for things like Health. Finance. Agriculture, trade and energy. Throughout this year 100,000 people are anticipated to attend. So, there is a high level preparation for the G20 going on.
+                
+                
+            </div>
+    
+        </p>
+    </p>
+    <h1>G20 Summit 2023 Schedule</h1>
+    <p>
+        <div class="ss3">
+            This year the Host of G20 Summit 2023 schedule will be India and this will be held in the country India. The G20 Summit 2023 Schedule is from 9 to 10 September 2023. This will be held in Delhi. The motto for the G20 Summit 2023 schedule is One Earth, One Family, One Future. This is one of the famous mottos in India. This will be used in the G20 2023 summit . The motto is derived from the Sanskrit text vasudhaiva Kutumbakam. The world is one family. So, this year in India the G20 Summit 2023 will be very interesting.
+            The G20 Summit 2023 Location In india, Countries are participants of this. The venue for the G20 meeting is in Pragati Maidan. If you live in Delhi or want to see the G20 summit then you can see it on the Pragati maidan. The 2022 G20 Baki summit was held in Precedes.
+
+This year this will be held in India and next year the 2024 G20 Brazil Summit will be held in Brazil. The website link for the G20 summit 2023 location in India Is given in the first topic as you can see it. So this is all about the G20 Summit 2023. If you like this post G20 Summit 2023 then do share with your friends and family.
+
+FAQs related to G20 Summit 2023
+All the participants of the G20 summit 2023 Delhi, Who are going to Summit in this G20 2023 Summit, the name of these nations are given below as you can see. The names are Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, South Korea, Japan, Mexico, Russia, Saudi Arabia, South Africa. Turkey,United Kingdom, United States, The European Union of the nation. All the nations are present in G20 Summit 2023 Delhi.
+            
+        </div>
+
+    </p>
+        <h2>Responsive "Meet The Team" Section</h2>
+<p>Resize the browser window to see the effect.</p>
+<br>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.whitehouse.gov/wp-content/uploads/2021/04/P20210303AS-1901-cropped.jpg?resize=768,576" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>PRESIDENT OF USA</h2>
+        <p class="title">JOE BAIDEN</p>
+        <p>Joseph Robinette Biden, Jr. was born in Scranton, Pennsylvania, the first of four children of Catherine Eugenia Finnegan Biden and Joseph Robinette Biden, Sr. In 1953, the Biden family moved to Claymont, Delaware. President Biden graduated from the University of Delaware and Syracuse Law School and served on the New Castle County Council.President Biden became one of the youngest people ever elected to the United States Senate. </p>
+        <p><a class="hovers" href="https://www.whitehouse.gov/administration/president-biden/">READ MORE</a></p>
+    
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://cdn.narendramodi.in/cmsuploads/0.72870700_1677581937_566x473.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>PM OF INDIA</h2>
+          <p class="title">NARENDRA MODI</p>
+          <p>Prime Minister Shri Narendra Modi was sworn-in by President of India Shri Pranab Mukerjee at the Rashtrapati Bhavan on May 26, 2014. His swearing-in was followed by the Cabinet Ministers taking their oath of office. He assumed office as the Fifteenth Prime Minister of India on May 27, 2014. PM MODI the pride of india belongs from Gujrat.</p>
+          <p><a class="hovers" href="https://www.narendramodi.in/">READ MORE</a></p>
+        </div>
+      </div>
+    </div>
+
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOr47AwTxrfxv7LxwltxKNWGNqExvMiQhjN7g7tt6ZhdGHVVSGBXDrEe4CAfYru_oCu0Y&usqp=CAU" alt="John" style="width: 100%;">
+      <div class="container">
+        <h2>PRESIDENT OF RUSSIA</h2>
+        <p class="title">Vladimir Putin</p>
+        <p>ladimir Vladimirovich Putin[c] (born 7 October 1952) is a Russian politician and former intelligence officer serving as the current president of Russia.</p>
+        <p><a class="hovers" href="https://en.wikipedia.org/wiki/Vladimir_Putin">READ MORE</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <h1>New Delhi Summit</h1>
+        <p>
+        <div>
+            The 18th G20 Heads of State and Government Summit will take place on 9th-10th September 2023 in New Delhi. The Summit will be a culmination of all the G20 processes and meetings held throughout the year among ministers, senior officials, and civil societies. A G20 Leaders’ Declaration will be adopted at the conclusion of the New Delhi Summit, stating Leaders’ commitment towards the priorities discussed and agreed upon during the respective ministerial and working group meetings. 
+
+        </Div>
+        </p>
+        <h1>FAQs related to G20 Summit 2023</h1>
+        <p>
+        <div class="ss3">
+            Where will the G20 Summit 2023 be organized?<br><br>
+
+The G20 2023 will be organized on Delhi at Pragati maidan.<br><br>
+
+Which countries are included in the G20 Summit 2023?<br><br>
+
+The countries Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy,South Korea, Japan, Mexico, Russia, Saudi Arabia, South Africa, Turkey, United Kingdom, United States,The European Union are included in The G20 Summit 2023.<br><br>
+            
+        </div class="ss3" >
+        </p>
+        <h1>G20 Leaders</h1><br>
+        <img src="https://www.g20.org/content/dam/gtwenty/new_delhi_summit/Argentina_presidant.png" alt="Forest" width="19%" height="180">
+    <img src="https://www.g20.org/content/dam/gtwenty/new_delhi_summit/6627a9fdf053068e4bd0338fe3fd41ca.png" alt="Mountains" width="19%" height="180">
+    <img src="https://www.g20.org/content/dam/gtwenty/new_delhi_summit/Luiz%20In%C3%A1cio%20Lula%20da%20Silva.png" alt="Italy" width="19%" height="180">
+    <img src="https://www.g20.org/content/dam/gtwenty/gtwenty_new/new-delhi-summit/Trudeau-head.jpg" alt="Italy" width="19%" height="180">
+    <img src="https://www.g20.org/content/dam/gtwenty/new_delhi_summit/President%20Xi%20Jinping.jpg" alt="Italy" width="19%" height="180"><br>
+    <img src="https://www.g20.org/content/dam/gtwenty/new_delhi_summit/Emmanuel%20Macron_new1.jpg" alt="Italy" width="33%" height="220">
+    <img src="https://www.g20.org/content/dam/gtwenty/new_delhi_summit/Germany_president.png" alt="Italy" width="33%" height="220">
+    <img src="https://www.g20.org/content/dam/gtwenty/gtwenty_new/about_g20/MELONI%20FOTO%20UFFICIALE.jpeg" alt="Italy" width="33%" height="220">
+    <div class="gg1">
+      <footer class="footer-distributed">
+  
+        <div class="footer-right">
+  
+          <a href="developer.html"><i class="fa fa-facebook"></i></a>
+          <a href="developer.html"><i class="fa fa-twitter"></i></a>
+          <a href="developer.html"><i class="fa fa-linkedin"></i></a>
+          <a href="developer.html"><i class="fa fa-github"></i></a>
+  
+        </div>
+  
+        <div class="footer-left">
+  
+          <p class="footer-links">
+            <a class="link-1" href="#"><b class="home.html"> Home</b></a>
+  
+            <a class="link-2" href="developer.html"><b class="flh">About</b></a>
+  
+            <a class="link-2" href="https://gpbgp.org/"><b class="flh">Institute</b></a>
+  
+            <a class="link-2" href="contact.html"><b class="flh">Contact</b></a>
+  
+            <a class="link-2" href="developer.html"><b class="flh"> Developer </b></a>
+  
+            <a class="link-2" href="#"><b class="flh"></b></a>
+          </p>
+  
+          <p>Virtual World &copy; 2023</p>
+        </div>
+      </div>
+  
+      </footer> 
+</body>
+</html>

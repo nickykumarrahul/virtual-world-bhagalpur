@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+p.title{
+  color: white;
+  text-shadow: 0.5px 0.5px yellow;
+}
+img.ddd3{
+  margin-left: 25%;
+}
+
+img.dd2{
+  margin-left: 35%;
+}
+ul.dd3{
+  color: white;
+  text-align: center;
+}
+a.hovers:hover{
+  background-color: yellow;
+}
+
+body{
+  background-color: black;
+  background-repeat: no-repeat;
+}
+h1{
+ text-align: center;
+ text-transform: uppercase;
+ color: white;
+ border: 5px solid yellow;
+ display: inline;
+ border-radius: 20px;
+ background-color: purple;
+ margin: 10px;
+}
+
+}
+
+.nav{
+  background-color:skyblue;
+  margin: 10px;
+  padding: 20px;
+  height: 80px;
+}
+a{
+  border: 2px splpid rebeccapurple;
+  text-decoration: none;
+  border-radius:40px;
+  display: inline;
+}
+.J{
+  background-color: black;
+}
+.c1{
+  height: 100px;
+}
+img.aa1{
+  width: 100%; height: 500px;
+}
+
+
+div.row{
+  border: 2px solid yellow;
+  background-color: brown;
+  border-radius: 10px;
+  color: white;
+}
+div.column{
+  border: 2px solid yellow;
+  background-color: brown;
+  border-radius: 10px;
+  color: white;
+  
+}
+div.card{
+  border: 2px solid yellow;
+  background-color: rgb(172, 154, 60);
+  height: 5%;
+  border-radius: 10px;
+  color: white;
+  height: 700px;
+}
+a.hovers{ border: 2px splpid rebeccapurple;
+text-decoration: none;
+border-radius:40px;
+display: inline;
+background-color: gray;
+}
+div.ss3{
+border: 2px solid yellow;
+background-color: brown;
+border-radius: 10px;
+color: white;
+}
+
+
+.nava {
+margin: -16px auto 0;
+padding-top: 0%;
+
+/* width: 590px; */
+  width: 100%;
+height: 65px;
+background-color: #1500ff;
+border-radius: 8px;
+font-size: 0;
+position: fixed;
+}
+.nava a {
+line-height: 50px;
+height: 100%;
+font-size: 15px;
+display: inline-block;
+position: relative;
+z-index: 1;
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+color: white;
+cursor: pointer;
+}
+.a1 {
+width: 100px;
+}
+.a2 {
+width: 100px;
+}
+.a3 {
+width: 100px;
+
+}
+.a4 {
+width: 160px;
+}
+.a5 {
+width: 120px;
+}
+/* 2nd */
+@keyframes rotate {
+0%{
+  filter: hue-rotate(0deg);
+}
+100%{
+  filter: hue-rotate(360deg);
+}
+}
+
+.wrapper2 ul li a:after{
+position: absolute;
+content: "";
+background: #fff;
+ background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+              /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+width: 104%;
+height: 110%;
+left: -2%;
+top: -5%; 
+              /* if the font is 'Oswald'*/
+border-radius: 50px;
+transform: scaleY(0);
+z-index: -1;
+animation: rotate 1.5s linear infinite;
+transition: transform 0.3s ease;
+}
+.wrapper2 ul li a:hover:after{
+transform: scaleY(1);
+}
+.wrapper2 ul li a:hover{
+color: #fff;
+}
+
+
+.logo{
+padding-top: 8px;
+padding-left: 50px;
+
+
+}
+img.ar1{
+  margin-left: 30%;
+  margin-top: 2%;
+  border: 5px solid yellow;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+/* section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+} */
+
+.footer-distributed {
+  background-color: #ffffff;
+  /* box-shadow: 0 1px 1px 0 rgba(253, 253, 253, 0.12); */
+  box-sizing: border-box;
+  width: 106%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  margin-left: -3%;
+  margin-right: -55%;
+ 
+}
+
+/* .footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+} */
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* .footer-distributed .footer-links .link-1:before {
+  content: none;
+} */
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+/* 
+.flh:hover{
+  background-color: aqua;
+  
+  border-radius: 3%;
+  border: #ff0000;
+
+} */
+
+
+
+
+
+
+
+
+
+.flh {
+	margin: -0% auto 0;
+	padding-top: 0%;
+	
+	/* width: 590px; */
+    width: 100%;
+	height: 30px;
+	background-color: #ff0000;
+	border-radius: 83px;
+	font-size: 0;
+}
+.flh {
+	line-height: 30px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+  @keyframes rotate {
+	0%{
+	  filter: hue-rotate(0deg);
+	}
+	100%{
+	  filter: hue-rotate(360deg);
+	}
+  }
+
+  .flh:after{
+	position: absolute;
+	content: "";
+	background: #fff;
+	 background: linear-gradient(#ea1f1f, #ea00ff, #07ff49);
+								/background: linear-gradient(375deg, #1cc7d0, #2ede98);/
+	width: 104%;
+	height: 30px;
+	left: -2%;
+	top: -5%; 
+								/* if the font is 'Oswald'*/
+	border-radius: 50px;
+	transform: scaleY(0);
+	z-index: -1;
+	animation: rotate 1.5s linear infinite;
+	transition: transform 0.3s ease;
+  }
+  .flh:hover:after{
+	transform: scaleY(1);
+  }
+  .flh:hover{
+	color: #fff;
+  }
+  div.gg1{
+    border: 1px solid white;
+  }
+
+
+
+
+
+
+
+
+
+        
+        </style>
+    
+    <!-- 2nd nex -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+</head>
+<body class="main_div2">
+  <script scr="home_page.js"></script>
+                                              <!-- Negivition Start -->
+  <nav class="nava">
+      <div></div>
+      
+      <div class="wrapper2">
+          
+          <table>  
+              <tr>
+                  <td> <a class="logo" href="#"><img height="40px" width="200px"  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJHMZf6FGSsNqYMHyIgOZS__bCerP5XZ8IQvn6g2r_5NsUL52CxS288tScf0rprJLZoZLv3c0tyDlBCh2nhi_aPc2-cxZm69m_DLqaueGSJWZLjQddDKQxTXIfZrTE9wiKHoisWIlIk0UjNpthtpGddaocdk75xOazhh-v1TiXGmtJS8V6pC5uSOOmBg/s320/20230301_110001.png" alt=""></a></td>
+                  <td><ul> <li><a class="a1" href="home.html">Home</a></li></ul></td>
+                  <td><ul> <li><a class="a2" href="developer.html">About</a></li></ul></td>
+                  <td><ul> <li><a class="a3" href="https://gpbgp.org/">Institute</a></li></ul></td>
+                  <td><ul> <li><a class="a4" href="contact.html">Contact</a></li></ul></td>
+                  <td><ul> <li><a class="a5" href="developer.html">Developer</a></li></ul></td>
+              </tr>
+          </table>
+      <div class="animation start-home"></div>
+      </nav>
+</div>
+<p>
+  <div class="ss3">
+  <img src="https://pbs.twimg.com/media/CgXsoxEWcAEcPN6?format=jpg&name=large" alt="" height="550px" width="100%">
+  </div>
+</p>
+  <h1>The Aryabhata spacecraft</h1>
+    <p>
+    <div class="ss3">
+        This article is about the Indian Mars probe. For other Mars orbiters, see list of Mars orbiters and list of missions to Mars.The Mars Orbiter Mission (MOM), also called Mangalyaan,[a][11][12] was a space probe orbiting Mars since 24 September 2014. It was launched on 5 November 2013 by the Indian Space Research Organisation (ISRO).[13][14][15][16] It was India's first interplanetary mission[17] and it made ISRO the fourth space agency to achieve Mars orbit, after Roscosmos, NASA, and the European Space Agency.[18] It made India the first Asian nation to reach the Martian orbit and the first nation in the world to do so on its maiden attempt.[19][20][21][22]
+
+        The Mars Orbiter Mission probe lifted-off from the First Launch Pad at Satish Dhawan Space Centre (Sriharikota Range SHAR), Andhra Pradesh, using a Polar Satellite Launch Vehicle (PSLV) rocket C25 at 09:08 UTC on 5 November 2013.[5][23] The launch window was approximately 20 days long and started on 28 October 2013.[6] The MOM probe spent about a month in Earth orbit, where it made a series of seven apogee-raising orbital manoeuvres before trans-Mars injection on 30 November 2013 (UTC).[24] After a 298-day transit to Mars, it was put into Mars orbit on 24 September 2014.
+        
+        The mission was a "technology demonstrator" project to develop the technologies for designing, planning, management, and operations of an interplanetary mission.[25] It carried five scientific instruments.[26] The spacecraft was monitored from the Spacecraft Control Centre at ISRO Telemetry, Tracking and Command Network (ISTRAC) in Bengaluru with support from the Indian Deep Space Network (IDSN) antennae at Bengaluru, Karnataka.[27]
+        
+        On 2 October 2022, it was reported that the orbiter had irrecoverably lost communications with Earth after entering a seven-hour eclipse period in April 2022 that it was not designed to survive.[28][29][30] The following day, ISRO released a statement that all attempts to revive Mangalyaan had failed and officially declared it dead, citing the loss of fuel and battery power to the probe's instruments.</p>
+        </div>
+    </p>
+    <h1>Launch</h1>
+    <p>
+    <div class="ss3">
+        It was launched by India on 19 April 1975[3] from Kapustin Yar, a Russian rocket launch and development site in Astrakhan Oblast using a Kosmos-3M launch vehicle. It was built by the Indian Space Research Organisation (ISRO).The launch came from an agreement between India and the Soviet Union directed by UR Rao and signed in 1972. It allowed the USSR to use Indian ports for tracking ships and launching vessels in return for launching various different Indian satellites.[8]
+
+        On 19 April 1975, the satellite's 96.46-minute orbit had an apogee of 619 kilometres (385 mi) and a perigee of 563 kilometres (350 mi), at an inclination of 50.7 degrees.[6][1] It was built to conduct experiments in X-ray astronomy, aeronomics, and solar physics. The spacecraft was a 26-sided polyhedron 1.4 metres (4.6 ft) in diameter. All faces (except the top and bottom) were covered with solar cells.[5] A power failure halted experiments after four days and 60 orbits with all signals from the spacecraft lost after five days of operation.[2] Spacecraft mainframe remained active till March 1981.[1] Due to orbital decay the satellite entered Earth's atmosphere on 10 February 1992.
+        </div>
+        <img class="ar1" src="https://www.deccanherald.com/sites/dh/files/article_images/2015/04/20/472744.jpg">
+    </p>
+        <h1>Aryabhatta Satellite:</h1>
+        <p>
+            <div class="ss3">
+            <ul >
+               
+
+                <li> Aryabhatta Satellite was under the Astrophysics mission type</li>
+                <li> The operator and inventor of Aryabhatta Satellite were ISRO.</li>
+                <li>The orbit parameters of the Aryabhatta Satellite were perigee altitude of 563 km, Apogee altitude was 619 Km, time was 96.46 minutes, and the Inclination of 50.7 degrees.</li>   
+            </ul>
+            </div>
+    
+        </p>
+        <h2>Meet The Team </h2>
+<p>Resize the browser window to see the effect.</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://www.hindipanda.com/wp-content/uploads/2018/08/Vikram-Sarabhai-41.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>INDIAN SPACE SCIENTIST</h2>
+        <p class="title"><b><u><strong>Vikram sarabhai</strong></u></b></p>
+        <p>Dr. Vikram Ambalal Sarabhai (12 August 1919 – 30 December 1971) was an Indian physicist and astronomer who initiated space research and helped develop nuclear power in India. He was honoured with Padma Bhushan in 1966 and the Padma Vibhushan (posthumously) in 1972. He is internationally regarded as the Father of the Indian Space Program</p>
+        <p><a class="hovers" href="https://en.wikipedia.org/wiki/Vikram_Sarabhai">READ MORE</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://images.indianexpress.com/2017/07/u-r-rao-759.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>INDIAN SPACE SCIENTIST</h2>
+        <p class="title"><b><u><strong>Udupi Ramachandra Rao</p></strong></u></b>
+        <p>Udupi Ramachandra Rao (10 March 1932 – 24 July 2017) was an Indian space scientist and former chairman of the Indian Space Research Organisation. He was also the Chairman of the Governing Council of the Physical Research Laboratory at Ahmedabad and Nehru Planetarium at Bengaluru and chancellor of the Indian Institute for Space Science and Technologyat Thiruvananthapuram..</p>
+        <p><a class="hovers" href="https://en.wikipedia.org/wiki/Udupi_Ramachandra_Rao">READ MORE</a></p>
+    
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFhUYGBgaHBwaGBoaHBwYGhgaGBoZHBgcGhgeIS4lHh4rIRwYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHzQrJCwxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALIBHAMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xABBEAACAQIEAwUFBQQKAgMAAAABAgADEQQSITEFQVEGImFxgQcTMpGhQrHB0fAUUnLhFSMzYoKSorLC8TRzFkSD/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAEDAgQF/8QAKBEAAgICAgICAgEFAQAAAAAAAAECESExAxIyQSJRYXGhBBMjgbEU/9oADAMBAAIRAxEAPwDjpgkivXzG5FtAPUSPOxmWCCCCAwQQQRACFDggAUEOFAAQQ4RiYCbwwYLQASaUrAVeXHDOzeJxAzIllH2nIQfWW3Yvs4Kx9/UByKe6P3iJ0ylhxbLYAdBsPzPjNyn12UhxORzfD9gKrDvVqYPMC5t621jlX2e4hRmSshbp3k8rMRadTp0FGlvLW+vrFtSB0/X3SP8AdXov/wCf8nBMfwyvQYGpTZTf4jqCf4hpLDiPaJauHFD3CqwI748PTedUx2D0IIuh3Q7H05ek5P2r4d7qqcqZUO343lIyjJfklPjlD9FCRpe/pDp0ySAASTsALk+kKOYasyMHU2ZTcGZlHJJHYvZ1gz+z2sUXXMpFmzczrr/3LTiLYfK9OqiBbWLOBqD5zB8P7YKTYu1JtLmwynrfeaOt2qwrJkqBajMND3SDfr0mWpWXTjRgO1nD1oOqU3L0iMyX1ynmL85G4HjmV1QsAs1HFeI0Qfd3R6dtALEq3S95R8F7PmuXcqRTUnbkPCW3G2SlHNIndo8QvucgcOzHqLiYyXPGeFLRYFXzoSNftDqJqsT2Uw7YFsTh2DdzNrqQRvvqD4TCVULq8nPqVQqbg2PWbZuPIMMKTHQgG3MH5zFLSJBIGg3PSS8gdWdnVWFrL+8LcptQ7YYlKjXcMoI9b3hzMAhtl2vzvbnL/s3gs9Mu6lVuSqEaDpvMh2I4wlFytVgqHa/Wbyp2ww7FUplWuQvQGSmndItGnkose71q4oBEVQpIe3xeEzXa3CPmU2HdGXTedWTC0nUE2vyI3X5bbyo412YpVrPnPdBsb6eMwmrHKNnGVW8GWbN8LSLvkCgILG9u8R4zH1DrtbwlVFNEGqCh8oUEsmIEEEEABBBCiAOCCCAAihbneJgmlgyOWXqflB7sfvCNwR9l7Q6Hfc+IPrJfBeFtiayUkF8xGY/urfUnyErxOq+yvgoP9Yb3Ya9MvIW/GKTio3Q0m3RuuEcAWnSCAWUCyjoBt89T6xtcLlYiadRYW6SrxCAG84ZScjt4nWCKgA0tJBwxtcRvJdvX8pYBgRYGYorKVFO9I7ETKdr+zy1qRA0cd5D4jkfCbivTIN+UgY2nmW1o4txdoeJKno85OpBIOhBsR0I3iZedrsCaWJcWsGOYeu/1BlHOtK8nmyVNoAhwQTdCDvLfBdo69JDTVhlO9xr85UEWiY2/TBNrQ7VqliSeZufPrJuD4xVpUnoq3cqfEPvtK2HE3ewuh6kxysoawO462MtqWAwxS7V7Na5tbfpb9bSjhQYJkmg4zKLAi9tRyJ3mv4bw3D08YirUDDKGtyuTtf8ACYpVuQOv4zoi9gquHpjEhwxRc+W1thfQxSeMs3CzU4/hPvVBR/c207ttpX8YxSYfCuiPntoSTc/PrJHZbjCY4vTUEZUF+Wpv+UxftCwPuHRFBCkEk8ibic8VcqZWUqVooBWdsxRGKto1v5frWVjix2tNZ2cxi0sLUYqb5vi9BMziaud2Y8z9OU6ovJzsYggggABAYIRibwAILxEdpW1v0085OMrdBQUEBMAlcWAIcKLAlIqzImEYoiEYSjSAXRtmF9RfUdfCd77BIlGk7sdCwVedgBawA57TgdFCzAAXJOg6+E7n2SouuGAcWa4ANipINgDY68yPSQ5fArxR7So1GM4qwIWnReoTyGRAPNnYD0GsouLdpXQA1MDi011yqlQf5kc+c0fvFDWsNvUW0/OLxALIDznImjqqmqMGvtCwimzLXUnkU1120vveS8L21FZbYai7EAnM9qai97XOpN7HYGXYoqxIZVa+lmAP3yj4Lwamv7UirkArOuUDRQVRlC2+HRgR5x0ilZyO4bjWLe/9TRci5yrWYNpyF6dpX1+2qMqpTpO1diU9ybZlZTY3b4SPEcpfYDgyUUWxKgFQFX4iq7LcddL/AM41U4OlNFZVGemzVM1tc9TMX16d4/IdIUh4ukcp7SpUrVlRwBUbYA5rX5EgWAvYc9t95mcVhmpsVdSraGx6EXB8iJvcR2Xz42mitlzd7XawYl2Zj4kc9bzMdtMYlXG1mS2QMEW2oIpqqXB6HKT6zqi1So4uVfJ2UUEEE0SBBBBAARxKgCkFQSdjzEbgjQAk3hqUWYiszKttCovr4yFCg2JD9fKGOQkqDoTvOlL7R6T4Y02Rg+TLYagm1tDOXwCKUU2rNJtaNl7O+M0sLWdqrZQygX5XBOl5a+0Pj2HxNJRTdWYMNBvbnOcmAQcE5WHb40bXhNVP6NdTlvma/XeY8YdjqAbRvObWubdIfvW/ePzMcaTE3YiCCCACma8QYcETdgItDEOCTUaYBiFFJa4vtzjmLChjkvl8ZtukFDQi1EbBjqy3DJMzIBEQ0cvrCqSs1cWJCFNjOm9g+1j1ayUK7XJt7sgKBdO9YgDe2bzvOYiWXAamXEUWuRZ11G41Gs5uqlFopGTjJM9BVsWqvTAQkk2Y8gALXB5y5w65l9Zm6GNzZC6nrp8LMOe+k0vDgcik7kXPrOF4O3kwkQzhCGv4w6+ARrvqr2sWRmQsBsGykZra2ve15aMl5DrrYfrbnCzKk2V1DC5dVDHxJLN82Og8ukXWIVTmRtBvYmw57R1uIZdMjeelj5XMqsVx5guzAkkWYDS2muuxjSZXLMD7Q8Iy02dGdbWzrmYjK7WAPTcd3becwnavaGoPD9QFerUQAeK6lR4DKxnN6HAg2/pc7+On0H1nZxxuJxczubM7BaTOI4VabZVYMOdt1I3BkOOqJhQ4I6qgbn5QUWxNjUAEkLVUfZv5mPtisoFlGom1GO2zLb+iKqEX0J/W8Aw7HkY+eIN0ET+2t4R1FhbEjBt0ihgW8PnBXrte2Yxj3rdTB9U6oFbRK/o5uoiK+CZRckfOR856mWNRc1IHmBeNU/QNtEXD1ECsGTMSO6b/AAmRoYETJs0HCYQGANuOshOQ1QQMVErFTUG2siYUEOCbGFCMVCmZK1QCRJdEaSMBJ+HTQSnBFqzE3SEFIxVW0nlZFxUvLxZiLyRQY6jEEEco1J2CwrOyixsTqbG1hqdfKR4s2mVZ23sZh2xGCpvnGexDKTe1j3bnkSuU69ZrMFWZAFdSLaX5ec4xwfjNXC1c9JrcmTdWUcmH4zsfZ3j1LFpmTRh8aHdD+K9DOXm4XF36LR5e0erLa8jYhb6SR7u3wn0gUi/jOc3F1kgFCOUquIpnUpkBZtM29hf75pWQGM+5UG9ppSNrkRzz2rOUw1FB8PvLufJWt5an6TCjG/1bhbM6ry52XkfTS0u/bFxunUalQpuGKFzUym4UnLlUnroZzii1Re8pYW5id3DfWqOSb+Vj2Jem5zKMunwjYH15bfIyI1I+flEMSTc7847RpMdtpS+z0Z0NjSJLSeuEdjYgGMVcMVPP9dOsJKSVIE0RhJGKHw+UWmGXTvjWSmwytbW1tIow+NMTkrKoQxLNuHqPtH0tGGoIDYk3guNh2QXvQpDFQ1xsZFLa32ljkTKA3LaNBKfQzcot+xKSI9WuW3t8rSxwmtLyvItSmpHd0Mm4VCqEHxglJPISarBVXsT4xuHm1gmHK9GgogiTMdhTTdkOpHPrIxk5Qs0JAioIIkqQAgggjAEEEEABJVPE2FrSLBNRl1E0nsktivCNPVzaWiEQk2AuToBNHwrAhQQbBran7WvQ8h5Qi5zf4M1GJUYfA3N3OUdPtHwty9ZdDFlVCoAq200vJD8OAOh/KMNhDy36TqjCMVgy5NhUXN+8NbfrSWXDsfUoOtWmxVl2PIjmCOYPSVOW241HLn6STQqg7G9/z1BjlFMSdHdOzPaBMXTzL3XW2enzU9R1U8jLphecF4TxJ8NVWqhsRuOTDmp8DO28J4kmIpJVQ6MNRzU81PiDPL5+Ho7WjpjKyPxziQw1P3rkBAQGJDMRmNhZV1M5v247ZuMnunR8PUXusl1YMts6uCdxddDb4pt+3gJw1shZc6l7fZUA94+F7TkmPwGRQ62elnVyDqFI0DH52Ph5TfBxRlG/YpTcZIoOOYTKQ5Fi/et59ZHpGy/Fy6zVcbp08Wt0XI6j4dxp06iYdgVJB0I0InRC4KmLlcZu0NmSsE2tpPxfDqf7KldMwObI4Oov1BlXh2swhF1Iw1gtlcjYxLd7fWN5/GJ974y9EciHoW1+R6eB8PHlHsO2h8/lEmqOsFHVSRulr+KXtfzUkeh8Imb2Pxisyg3NvxhmsOsg4updvKYlLqrFGNsfGIQ73i6Co2gJv0MrYoNY3EwuVm+iLpaQA2ii4F79DGExSlbk2PMSLiagYixsBuf5dZuTwZSyRkp3J1sOpjuZBpqfHb6Rp3vsLAbfmfGNyCaWilWTuK4r3lVm5XsPISHBBKAFBBBMUMEEEFoUAIIIIUAIIdopFuQBzNvnBRAs+DUgGVz1PpyH4zSPh9QwtcC3mOkoaNMqBY8haX2FcOnlOtR6pJEbtiQ/UG3Mc18fEQBrEHfp0Ij7rqLaEbRh0sf7v+09R4X+UYCcSiPYAWNrg9JBq0rd+xts9tcrg6G3QjpJ7ixv6flEU6oDAn4X7p/iG3z/AAjQDdF72IPrNZ2I4/8As1XI5tTewa+ytsr+A5Hw8plMgRjl5wA/OYnBTi4scZNZPQpAIsbEH1uDOS9p6ZpYl8PtSGqJbQI4uQOovca9JrvZ9x739L3Ln+spADXd6eynzGx9OsLt3wYOq4gDVBlf+Enun0JPo3hPP4v8fL1ZaXyjaObcawBRKeJpiyElHy6ZKqbi3IMLOvmR0mJ4irZ2JN8xvfredY7N01qPWwVUEU8Uhem1tBUpblerWyn/APOYjF8Hf3r4ZxZ1a17bFeY8CNfIzrvtae1/wmvT+xfDUDcOrIb3Bzr42sfwmRBm/wAfj6OGw7UQCahXLtpe3OYCTbW0baawxWc9YWYwoIdn9mQ8xmj7EYKnXxQSoWClWuFy94EZSCWOgs3iZm5ouwlRFxtLOoYG4F9gbXB+lvWLs/s0M9q+EfsuIamCCu62bPYbWLWHe0va2lxKKdg9rfDw1BKigDIVawAGjd0/W3ynH5ns5KxaHaVri+0PEKA2m0aBjtJAT3jYcz+Q5yracaF7sZhy+TAYeooFNnDD4r8/HL+Udo8AV1Zs+UjS1ri66fXf1k9C7IzcLNJOLwrU2ysNfoR1Ej2mGn6NJoteCYdGZme+VFJGlwW5CFj8KAi1QFAYnTnrtpNIMGlKmqkhbi55625yh43WRgiprlGpHjNRl2eDF5KgNaJhwSlNlAFYUWqE7Any1i2olfiBXz/KOhDNpLw1ZU1K5jyvtHKGFpnep6AawquAN+5qvU6QpaGrWRvEYlm00A6AQ8AO8Wt8Ks3raw+pEj3lhhKdqbN+8yqPIHMf14SkYq0Zk3ssuGKHpgH4l0Efw7lGsRYbH85F4WjDOwGitb75Zuq1F03G3h4HwlmTJ6WPOJZJFwpJWx3GnjpHzU5GZGM1F+X3eEjlCyuvMWI8xvJTC/rItJyG18vUf9TSEx11DIHEiMdY6Xyhl8biIxCbNGJk/gvFHw1ZKqXup7w/eU/Ep8x9bTueHrJXpB1syOt/NWGoP3Tzujzpnsw41o2Fc9Xp/wDNf+X+acf9VxWuy2ivHL0YztLUq4DHIQzEUXDoL6FTYsLdWQgHzmq7fYUMtHimH1BVM5HNWF0Y/PKfSRPbHw/vpVA+JP8AVTOv+lv9MleyziC4rB1cDVObILL/AOt9reKtf5rE38I8q9Yf6Gllo5PxjHPVqMWI35aC9t5DoUSx8OZ6TS8f7Nvh8QyVu73QykahhcgG/pM8+IIUotrX35mN9bwDbexXEBTDAU72A1J5tztIkFoJloYJIwNfJUR/3XVvQEEyPBGB17tHVq4jCAqA6AlKhBFwpsUIBOp31/u7azl/FMKqN3LlG1UnewNiD4gidM7DkYjBVlGYlVXNp9pNTYk66H6zBcQXPhzUtbJiGSx3Adc1j6q3zguqTSJR/uN3JYKKC8EdoYdnNlH5DzMDYVGqyEMpII2Imm4HxymGb3oyl7XI1UkaXtyP5Si/ox+VvnFjhb7kqB4m9/IDeDjexNxZpeL08PVQsHU21BBFxM3TpUba+8J6gaRL4DL8TBR47/KS6eDo2/tPrGkkZtLRs8XSSuO8thdteQFzlv6TJ4jA5Q7kXC6KRz8Z0EZHDU0UBbAMTzA5TJcYq3PuEYquoOnLpecvHKjU1mzO8Jwqs65wcraL0J8ZO4hTo4d8uQOd7dJP4ZggFIBNlOo536yu47gFVzZu8bb8/GXUu0hKXsXT42m2QKOgEN8bSfVaRY9TaZ8i0WlUrsZXoinZk6vTe+YKqDwkF6jHcn5xJcncmJmlRkMGWzplpoP8R8z/ANyol7jafdRxsQLjxtp+MrCrMy0SeCVe86HnYj5SfXoEHMny/lKPBMVYNfXT8bzSpUDAHrt+U1LDMrJHpvm5WMeWzaXFxv1HpEVU56Xicit8Q15HYqfAzIwZSDI7rZ/DQ/OSQGW2uYfWM1yL3vr9dxGhMRXTnDp7EGOGNroYwIjjKfukvhfEHo1Eqp8SMGHjbcHzFx6xFZL/AK+kiEwaTVME6Z17t9TTE4BcQmqrkqD+B9GHyP0nK+xXGP2XiFN2sqk+5qW0GVrLc/4grHyM6P2AxRxOBr4UnvIGC3/dqAlfk2b6TjmNp5aveW4BGZdr5TZxflqrTk4liXGyreUztntT4Ea+GNVPjpAk23NM/EPQ2PznAw1tp6c7L8QXFYKjVNjnTK437w7jg+oM899rOF/s2LrUuQc5f4Sbj6WkeFunH2jUl7KWCHaC0t1ZgKCHaCHUDp3sXxP9ZXpHZlB+YIP3CZ7iWCKnF4fmMQjDpqXF/kxj/sqxWTHoCdHUr9QfwMtfaHSNGviiuhb3TX/izCTqptfZbcDLe7p4cZSA7t5fjsJHfFotyQCxPwrpb1lSWJNybnqYRletHO4JvJNfibHYKPS8TVqkEBiSdzbl4CMUF1vsBYkx2pRW9zUBv4RO0Pqmwmqod8x8/wDuFmp9GkvCUsOP7RmboFB/CFiFoBiAr2i7P6/gfRL3/JdY3GVQ7IhN2BBHQdZBpVGVrOx0HTUne8suK8VBq2AAXNcMo1AJ0ldiMYfes51uLAHYySWNE5PJf4BtHL3X3mUA268/rGcTwcXY3DgddbX2iMTjjSSmSAS2yn93oJHatUd2qByh0sg2v4iYUXseClx/CmQKy3YNe9h8JB2isFwV3ptUPdUGw01J8ppMa7qUNgDa5A+1ffSN18W2QFiNb2HT0EqptofYpF4Fa+eooOXMoGtz0MpSJe06t2zX2BHoZSVALmxuJSP5CMrEy/o1QcOBzUj6NaUEtOEtdWX19DofuErB0xy0P0V09T9dZPwtTQox0Ox6GQqRtcc/xEXSOsuyZcU3J7rWzDpswH2h+I5QzE0dQL69P5GKdv1+Y/XpMGhuo5A+/wDCRDYtJxS48x98gVFKuPO0aEyUWh36xF4q+g84wCqbGQqosfP7/wBffJ9caSHWHLqNPOAmab2a8S93jVQnu1VNM+fxJ9Vt/ilR7R+GrSxtUElQ16i2FxdwGA8s2f5SuwuINN0qL8SMrjzUgibX2wUEqUsNikHxqNRsVtmQHxszH0M55fHlT+0VjmP6LT2KcQz4arRJ1p1MwHRag0/1K3zmc9sfDSMUtRVvnVb25kXU/wC1fnE+xjFhMU6FgDUSwXmSneBHpn+c13tXoEUaddRcozL/AJlzD/YfnIePO/yb3E4kvD6h+wYP6PqfuGaPB9q0Hx0r+Vpa0u0dJ9qIHmQJWUpL0CjF+zI0uB1CLkqvnGa/Dsm7rLjjvG1a6Kov1BuBKTA4Rqz5RYdSdhBSe2JpXSJnZ3Ee6xVFwdnAv/F3fxnSPanhg3fOgdaf0Zv5TKYLsYWKkVdQQdBpcTfdpsH+04fCg6E5kPgU1/CSnOLkmikYySpnOOH8Cw7gZn+stqfZPBn7Z/zSx/8AjqINbStx6U6Y3AmXJyeGb6pLKH37K4QCwfffWUuO4DhkBIc31sAbkysxfFTeyN+Uk8NrnvFzmNu6JRRklbZKcopYQ1g8ETZO6uut/vJlg/CKYNhWW3pKytqxY5mJ5KGKjw0EjftSjTbwtNdW/Zzp1tWRsSxV22/QiXqkrlvtrHuIAEg/3Vv8tDGmo3yf3gB9bRqqRRpWO4yo2Sjck2UkX6X0khcfamNi7PcnmB5S24nxSlTb3S0QxQKovtteUeDw3vqoBAXMdFGnymMVYNZo0dHiKO2R7JYWzX3NtQJUcRLDUbciDe8m9oeFJSRHYEZgQLblgdbzMvUJ0ubDYdIoRW0Dj9ksYmy6i7HZvvkGHe8FpZIEqCk3hR79uqkfS/4SHHsI+V1PiProYaaY3ot8QuVg37wHz0B/4xVPQ/WHiRp/Cb+h3/XhA1it/wBX5/X8J0kS0w1QEWj5UDW9pUYdyNZKxVUtTsL6mxPhzmGsmk8DFTiQLdxSV5m11J8ANfURa11e3Ig/r9bxmklgL2HSK92M1/tXuOXmPKMRJilhMYpDGAHFxIlblJhkSqkBMZZdfAzdAjF8EZDq+Gew8F1APojn/LMQycvUec1ns6rg1KuFc9zEU2W398A2/wBJf5CR5ljt9ZNw3Ri+yWKOHxmFqkWHvF16qzFG+hadj9qOLyYZKeW/vHAv+7kBb5n85wzidFqdZ1OjKx25G/L1nZO2VY4jhuFr2N8yM3UMUZXB/wAWklyJPkjI2n8WcXq112RQPHmZGJljQoC5LLfUyWmEQ97ujwlG6EslVg8uYZhcS7fGopui/ISOmDdm7uX5SaOFVgL5lAk5U9mo36LbC9rHpqFSkPMzX4biLVOHCuAM9OozEdM17icvqOqmzvfy1nQuwbCrhcTRGoIzL42sdPUSMoJKyyk3sqcRjMTV5ACVGNplPjp55peG4erzHMi/LQ2ljiOGVHOUqmUC7dT4eUx26vRtq1s59hcMK+iUMvj+Uu6HAmVbCy+A5fzlpiXKXsqi3SZnifaJ1NhNdpSwjL4op3JlrR4a9Ncotb6zOYngneJO513jT9pax0jX7fUOus2lJbMKMPQxith/Av3mCnvR81/3CCCU9ES4xKj31bT7Q+6TeAIPfpoN/wADBBIS8WC8/wDZcdt0H7Kug0LW8NZz3DKOkKCV/pvE1PyLBlFtpVVvi9YcEvETEJGzBBExI0tTdv4T90awnwep+5YIJ0eiYrpJ2H+AwoImERBkfn6/iIIIIGTB+UcTYwQRAEJGqQQRgN1d185c9jv/ADqH/s/AwQTHJ4v9BHyRnu2X/m1/43/3tOh4RieA0iTc521Ov/2HggnPPUf2iy0zKU0GVdBtM3jfiggmobZqXiiXwtjcayzxzHLvCgk5eQ1oz2LUaafrSdK9nmm2ncMEEJ+IR2XvC/7JfOKxjHNvyggnLLZ0x0jN8Y+Gc7x3xmCCV4TPJoZQaiTRBBLMwf/Z" alt="John" style="width: 100%;">
+      <div class="container">
+        <h2>ISRO scientist</h2>
+        <p class="title"><b><u><strong></strong>G. K. Menon</p></strong></u></b></p>
+        <p>G. K. Menon, was a physicist and policy maker from India. He had a prominent role in the development of science and technology in India over four decades. One of his most important contributions was nurturing the Tata Institute of Fundamental Research, which his mentor Homi J. Bhabha founded in 1945.</p>
+        <p><a class="hovers" href="https://en.wikipedia.org/wiki/M._G._K._Menon">READ MORE</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <h1>Cost</h1>
+        <p>
+        <div class="ss3">
+            Named after fifth-century Indian astronomer and mathematician Aryabhata, India's first satellite was launched on April 19, 1975. Costing a little over <b>₹3</b> crore, the 360-kg satellite stopped transmitting data five days after launch due to power failure, but spent 17 years in Earth's orbit.
+        </Div>
+        </p>
+        <h1>FAQs related to Aryabhatta Satellite</h1>
+        <p>
+        <div class="ss3">
+            1. What was the purpose of the Aryabhata Satellite?<br><br>
+
+Ans. Aryabhatta Satellite was established for performing experiments in X-ray astrology, agronomy, and solar physics, by ISRO. It carried scientific experiments to the atmosphere of space.<br><br>
+
+2. Who launched the first satellite in India?<br><br>
+
+Ans. India’s first satellite Aryabhatta was launched by ISRO, on 19th April 1975.<br><br>
+
+3. Who was India’s first satellite named after?<br><br>
+
+Ans. India’s first satellite Aryabhatta was named after the Indian mathematician and astronomer of the 5th center Aryabhatta.<br><br>
+
+4. How many Satellites does India has?<br><br>
+
+Ans. India has 53 operational Satellites which are used for various purposes like communication, navigation, and observation.<br><br>
+            
+        </div>
+        </p>
+        
+    <img src="https://images.moneycontrol.com/static-mcnews/2019/01/2-Dis-assembled-mode-tests-of-Aryabhatta.png?impolicy=website&width=770&height=431" alt="aryabhatta" width="19%" height="120">
+    
+    <img src="https://images.hindustantimes.com/img/2022/04/15/1600x900/ETQ7M114_1650048802479_1650048813745.jpg" alt="Italy" width="19%" height="120">
+   
+    <img src="https://fl-i.thgim.com/public/migration_catalog/article23026021.ece/alternates/FREE_1200/FL%2018%20UR%20RAO" alt="Italy" width="19%" height="120">
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDGlZE1xN82bwG-sPJ8QYLqZCUb06Pbbo84g&usqp=CAU" alt="Italy" width="19%" height="120">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqovltdUL-2dPEHMn4tQq1MmfUZ_HqTWFf_A&usqp=CAU" alt="Italy" width="19%" height="120">
+    <section></section>
+    <div class="gg1">
+		<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="developer.html"><i class="fa fa-facebook"></i></a>
+				<a href="developer.html"><i class="fa fa-twitter"></i></a>
+				<a href="developer.html"><i class="fa fa-linkedin"></i></a>
+				<a href="developer.html"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="home.html"><b class="flh"> Home</b></a>
+
+					<a class="link-2" href="developer.html"><b class="flh">About</b></a>
+
+					<a class="link-2" href="https://gpbgp.org/"><b class="flh">Institute</b></a>
+
+					<a class="link-2" href="contact.html"><b class="flh">Contact</b></a>
+
+					<a class="link-2" href="developer.html"><b class="flh"> Developer </b></a>
+
+					<a class="link-2" href="#"><b class="flh"></b></a>
+				</p>
+
+				<p>Virtual World &copy; 2023</p>
+			</div>
+    </div>
+
+		</footer> 
+</body>
+</html>
